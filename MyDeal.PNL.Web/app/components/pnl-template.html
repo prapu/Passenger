@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 text-right">
-                        <button ng-click="getPassengers()" class="btn btn-primary"><i class="fa fa-list" aria-hidden="true"></i> List All Passengers</button>
+                        <i class="fa fa-refresh fa-spin fa-3x fa-fw" ng-show="progress!=false"></i><button ng-click="getPassengers()" class="btn btn-primary"><i class="fa fa-list" aria-hidden="true"></i> List All Passengers</button>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadModal">
                             <i class="fa fa-upload" aria-hidden="true"></i> Upload Passenger Data
                         </button>

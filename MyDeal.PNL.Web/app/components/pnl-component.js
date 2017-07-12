@@ -24,14 +24,17 @@
             }            
         }
         $scope.passengerList = null;
-
+        $scope.progress = false;
         $scope.getPassengers = function () {
+            $scope.progress = true;
             //get all the passengers
             getPassengerService.getPassengers().then(function (result) {
                 //success
                 $scope.passengerList = result.data;
+                $scope.progress = false;
             }, function (result) {
                 //error
+                $scope.progress = false;
                 $scope.passengerList = null;
             });
         }
