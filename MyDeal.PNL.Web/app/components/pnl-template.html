@@ -1,0 +1,81 @@
+﻿
+<h2>{{title}}</h2>
+<!--Country selector-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control" ng-model="searchPassenger" placeholder="Search for passenger name, record locator...">
+                           <span class="input-group-btn">
+                                <button class="btn btn-default" ng-click="searchPassengers()" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                            <i class="text-warning css-sch-err" ng-if="searchError!='' && searchPassenger==''">{{searchError}}</i>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <button ng-click="getPassengers()" class="btn btn-primary"><i class="fa fa-list" aria-hidden="true"></i> List All Passengers</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadModal">
+                            <i class="fa fa-upload" aria-hidden="true"></i> Upload Passenger Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--\Country selector-->
+
+<!--Passenger list Display-->
+<table class="table table-bordered" ng-if="passengerList!=null">
+    <thead>
+        <tr><td colspan="2" class="text-center"><h3>Passenger details</h3></td></tr>
+        <tr>
+            <th>Record Locator</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="p in passengerList">
+            <td>{{p.BookingId}}</td>
+            <td>{{p.Name}}</td>
+        </tr>
+    </tbody>
+</table>
+<!-- Modal -->
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Upload Passenger Data</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Passenger Data</label>
+                        <textarea required class="form-control col-sm-12" ng-model="passengerData" rows="5" cols="100" placeholder="Enter passenger details"></textarea>
+                        <i ng-if="errorMessage!='' && passengerData==''" class="text-warning">{{errorMessage}}</i>
+                        <i ng-if="uploadSuccess!=''" class="text-info">{{uploadSuccess}}</i>
+                    </div>
+                  <button class="btn btn-primary" ng-click="uploadPassengers()">Upload Passenger Data</button><i class="fa fa-refresh fa-spin fa-3x fa-fw" ng-show="uploadProgress!=false"></i>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

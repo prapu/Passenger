@@ -1,0 +1,1 @@
+﻿var pnlApp = angular.module('pnlApp', []);
