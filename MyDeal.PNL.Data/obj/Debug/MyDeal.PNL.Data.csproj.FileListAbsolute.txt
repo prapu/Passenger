@@ -1,0 +1,10 @@
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\bin\Debug\MyDeal.PNL.Data.dll.config
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\bin\Debug\MyDeal.PNL.Data.dll
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\bin\Debug\MyDeal.PNL.Data.pdb
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\bin\Debug\EntityFramework.dll
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\bin\Debug\EntityFramework.xml
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\obj\Debug\MyDeal.PNL.Data.dll
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\obj\Debug\MyDeal.PNL.Data.pdb
+D:\praveen\INTERVIEW\2017\MyDeal\MyDeal.Passenger\MyDeal.PNL.Data\obj\Debug\MyDeal.PNL.Data.csprojResolveAssemblyReference.cache
